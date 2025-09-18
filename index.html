@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AviaSales Казахстан</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f7fb;
+    }
+    header {
+      background: #0066cc;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background: url("https://picsum.photos/1200/400?random=1") no-repeat center/cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .hero h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+    .search-box {
+      margin-top: 20px;
+    }
+    .search-box input {
+      padding: 10px;
+      width: 250px;
+      margin-right: 10px;
+    }
+    .search-box button {
+      padding: 10px 20px;
+      background: #ff6600;
+      border: none;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .search-box button:hover {
+      background: #e65500;
+    }
+    .content {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    footer {
+      background: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>AviaSales Казахстан</h2>
+    <nav>
+      <a href="#home">Главная</a>
+      <a href="#tickets">Авиабилеты</a>
+      <a href="#about">О нас</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h1>Поиск дешёвых авиабилетов</h1>
+    <p>Находите лучшие предложения на перелёты по всему миру</p>
+    <div class="search-box">
+      <input type="text" placeholder="Откуда">
+      <input type="text" placeholder="Куда">
+      <button>Найти билеты</button>
+    </div>
+  </section>
+
+  <section class="content" id="tickets">
+    <h2>Популярные направления</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://picsum.photos/400/250?random=2" alt="Алматы">
+        <h3>Алматы → Астана</h3>
+        <p>от 15 000 ₸</p>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/400/250?random=3" alt="Москва">
+        <h3>Алматы → Москва</h3>
+        <p>от 45 000 ₸</p>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/400/250?random=4" alt="Стамбул">
+        <h3>Астана → Стамбул</h3>
+        <p>от 60 000 ₸</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="content" id="about">
+    <h2>О компании</h2>
+    <p>AviaSales Казахстан — ваш помощник в поиске авиабилетов. Мы находим лучшие варианты перелётов по всему миру по самым выгодным ценам.</p>
+  </section>
+
+  <section class="content" id="contact">
+    <h2>Контакты</h2>
+    <p>Email: support@aviasales.kz</p>
+    <p>Телефон: +7 (777) 123-45-67</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 AviaSales Казахстан. Все права защищены.</p>
+  </footer>
+</body>
+</html>
